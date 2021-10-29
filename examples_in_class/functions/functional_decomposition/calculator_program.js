@@ -8,9 +8,23 @@
     - Show the result
  */
 
-//welcome the user and then prompt them for inputs
-welcome();
-getUserInputs();
+//define global variables to hold our calculator values
+//(global variables are accessible inside and outside
+// of functions)
+let num1 = 0;
+let num2 = 0;
+let operator = "";
+
+//start the program
+runProgram();
+
+function runProgram()
+{
+    //welcome the user and then prompt them for inputs
+    welcome();
+    getUserInputs();
+    showResults();
+}
 
 //functions to run the console program
 function welcome()
@@ -25,10 +39,13 @@ function welcome()
 
 function getUserInputs()
 {
-    let num1 = parseInt(prompt("Enter a number"));
-    let num2 = parseInt(prompt("Enter a number"));
-    let operator = prompt("Enter a type of arithmetic (+ add, - sub, * mult, / div)");
+    num1 = parseInt(prompt("Enter a number"));
+    num2 = parseInt(prompt("Enter a number"));
+    operator = prompt("Enter a type of arithmetic (+ add, - sub, * mult, / div)");
+}
 
+function showResults()
+{
     switch (operator)
     {
         case "+":
