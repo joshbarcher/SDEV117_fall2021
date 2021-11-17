@@ -1,0 +1,15 @@
+.dark {
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 10px;
+    color: darkblue;
+    list-style-type: none;
+}
+
+.light {
+    background-color: lightyellow;
+    border: 1px solid black;
+    padding: 10px;
+    color: orange;
+    list-style-type: none;
+}
