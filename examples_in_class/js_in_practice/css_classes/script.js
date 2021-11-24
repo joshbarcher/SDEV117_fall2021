@@ -4,11 +4,12 @@ for (let i = 0; i < lists.length; i++)
 {
     if (i % 2 === 0) //i is even
     {
-        lists[i].className = "dark";
+        lists[i].classList.add("bold");
+        lists[i].classList.add("dark");
     }
     else //i is odd
     {
-        lists[i].className = "light";
+        lists[i].className = "bold light";
     }
 }
 
